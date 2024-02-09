@@ -15,7 +15,7 @@ function painCanvas(canvasId, textId, inputId, name) {
     const formData = new FormData();
     formData.append('file_csv', inputFile.files[0]);
 
-    fetch('http://localhost/csv_graf/php/csv.php', {
+    fetch('https://residenciatecnologic.github.io/web/php/csv.php', {
         method: 'POST',
         body: formData,
     })
